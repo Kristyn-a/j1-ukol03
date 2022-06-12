@@ -3,13 +3,7 @@ package cz.czechitas.ukol3.model;
 public class Procesor {
 
     private String vyrobceProcesoru;
-
-    private Long rychlostProcesoru;
-
-    public void nastaveniProcesoru (String vyrobceProcesoru, Long rychlostProcesoru){
-        this.vyrobceProcesoru = vyrobceProcesoru;
-        this.rychlostProcesoru = rychlostProcesoru;
-    }
+    private long rychlostProcesoru;
 
     public String getVyrobceProcesoru() {
         return vyrobceProcesoru;
@@ -19,11 +13,11 @@ public class Procesor {
         this.vyrobceProcesoru = vyrobceProcesoru;
     }
 
-    public Long getRychlostProcesoru() {
+    public long getRychlostProcesoru() {
         return rychlostProcesoru;
     }
 
-    public void setRychlostProcesoru(Long rychlostProcesoru) {
+    public void setRychlostProcesoru(long rychlostProcesoru) {
         this.rychlostProcesoru = rychlostProcesoru;
     }
 

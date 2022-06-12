@@ -1,36 +1,27 @@
 package cz.czechitas.ukol3.model;
 
 public class Disk {
-    private Long kapacitaDisku;
+    private long kapacitaDisku;
+    private long vyuziteMistoDisku;
 
-    private Long vyuziteMistoDisku;
-
-    public void nastaveniDisku (Long kapacitaDisku, Long vyuziteMistoDisku){
-            this.kapacitaDisku = kapacitaDisku;
-            this.vyuziteMistoDisku = vyuziteMistoDisku;
-    }
-
-    public Long getKapacitaDisku() {
+    public long getKapacitaDisku() {
         return kapacitaDisku;
     }
 
-    public void setKapacitaDisku(Long kapacitaDisku) {
-
+    public void setKapacitaDisku(long kapacitaDisku) {
         this.kapacitaDisku = kapacitaDisku;
     }
 
-    public Long getVyuziteMistoDisku() {
-
+    public long getVyuziteMistoDisku() {
         return vyuziteMistoDisku;
     }
 
-    public void setVyuziteMistoDisku(Long vyuziteMistoDisku) {
-
+    public void setVyuziteMistoDisku(long vyuziteMistoDisku) {
         this.vyuziteMistoDisku = vyuziteMistoDisku;
     }
 
     @Override
     public String toString() {
-        return "kapacitaDisku" + " bitů " + kapacitaDisku + "vyuziteMistoDisku" + " bitů " + vyuziteMistoDisku;
+        return "Disk" + "kapacitaDisku=" + kapacitaDisku + "vyuziteMistoDisku=" + vyuziteMistoDisku;
     }
 }
